@@ -2,6 +2,9 @@ package tr;
 
 import util.SleepUtil;
 
+/**
+ * 设置Daemon 线程,如果jvm中的Daemon 线程没有，则自动退出JVm
+ */
 public class DaemonThread {
     public static void main(String[] args){
         Thread thread = new Thread(new DaemonRunable(),"DaemonRunable");

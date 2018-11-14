@@ -6,6 +6,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 等待通知机制
+ */
 public class WaitNotify {
 
     static boolean flag = true;

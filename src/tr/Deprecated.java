@@ -7,6 +7,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 不常用的3剑客 suspend(暂停) resume(复位) stop(停止)
+ */
 public class Deprecated {
 
     public static void main(String[] args) throws InterruptedException {

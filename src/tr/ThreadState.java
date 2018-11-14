@@ -2,9 +2,10 @@ package tr;
 
 import util.SleepUtil;
 
+/**
+ * jps jstack 打印线程状态
+ */
 public class ThreadState {
-
-
 
     public static void main(String[] args){
         new Thread(new TimeWaiting(),"TimeWaiting").start();

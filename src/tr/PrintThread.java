@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.PipedReader;
 import java.io.PipedWriter;
 
+/**
+ * 管道输入输出的应用
+ */
 public class PrintThread {
     public static void main(String[] args) throws IOException {
         PipedWriter writer = new PipedWriter();

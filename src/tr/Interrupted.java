@@ -4,6 +4,9 @@ import util.SleepUtil;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 线程不优雅中断
+ */
 public class Interrupted {
 
     public static void main(String[] args)  {

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 线程优先级设置
+ */
 public class Poriority {
     private static volatile boolean notStart = true;
     private static volatile boolean notEnd = true;

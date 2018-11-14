@@ -2,6 +2,9 @@ package tr;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 优雅中断
+ */
 public class ShutDown {
 
     public static void main(String[] args) throws InterruptedException {
