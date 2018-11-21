@@ -11,7 +11,7 @@ public class PrintThread {
     public static void main(String[] args) throws IOException {
         PipedWriter writer = new PipedWriter();
         PipedReader reader = new PipedReader();
-
+        //输入流和输出流的链接,否则抛出IOException
         writer.connect(reader);
         new Thread(new Print(reader),"PrintThread").start();
         int re=0;

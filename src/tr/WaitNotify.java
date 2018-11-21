@@ -20,6 +20,7 @@ public class WaitNotify {
         TimeUnit.SECONDS.sleep(1);
         Thread notifyThread = new Thread(new Notify(),"notifyThread");
         notifyThread.start();
+        notifyThread.join();
     }
 
     static class Wait implements Runnable{
