@@ -34,7 +34,6 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
             workList.add(worker);
             Thread thread = new Thread(worker,"ThreadPool-Work-"+threadNum.incrementAndGet());
             thread.start();
-
         }
     }
 
@@ -56,11 +55,15 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
 
     @Override
     public void addWorks(int num) {
-
+        num =(MAX_WORK_NUMS-work_nums)<num?MAX_WORK_NUMS-work_nums:num;
+        this.initWorks(num);
+        work_nums = work_nums+num;
     }
 
     @Override
     public void removeWorks(int num) {
+        num = (work_nums-MIN_WORK_NUMS)<num?work_nums-MIN_WORK_NUMS:num;
+
 
     }
 
